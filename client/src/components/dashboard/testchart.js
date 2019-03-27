@@ -9,11 +9,10 @@ class TestChart extends React.Component {
     });
 
     return (
-      <div className='row'>
-        <div className='col-lg-12 text-center' >
+
           <Chart
-            width={'700px'}
-            height={'400px'}
+            width={'500px'}
+            height={'300px'}
             chartType="PieChart"
             loader={<div>Loading Chart</div>}
             data={data_temp}
@@ -22,8 +21,6 @@ class TestChart extends React.Component {
             }}
             rootProps={{ 'data-testid': '1' }}
           />
-        </div>
-      </div>
 
     )
   }
