@@ -9,7 +9,7 @@ class TestChart extends React.Component {
     });
 
     return (
-
+<div style={{display: 'flex',  justifyContent:'center', alignItems:'center'}}>
           <Chart
             width={'500px'}
             height={'300px'}
@@ -21,7 +21,7 @@ class TestChart extends React.Component {
             }}
             rootProps={{ 'data-testid': '1' }}
           />
-
+</div>
     )
   }
 }
