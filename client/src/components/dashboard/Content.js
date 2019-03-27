@@ -1,6 +1,7 @@
 import React from 'react'
-import Table from './Table'
+import TestChart from './testchart'
 import Form from './Form'
+import ListCandidates from './listcandidates'
 
 class Content extends React.Component {
   render() {
@@ -8,8 +9,9 @@ class Content extends React.Component {
       <div>
         
         { this.props.hasVoted ?
-          <Table candidates={this.props.candidates}  />
-          : null
+          <TestChart candidates={this.props.candidates}  />
+          // :null
+          : <ListCandidates candidates={this.props.candidates}  />
         }
         <hr/>
         { !this.props.hasVoted ?
@@ -17,6 +19,7 @@ class Content extends React.Component {
           : null
         }
         <p>Your account: {this.props.account}</p>
+        <p>Contract address:{this.props.contractadd}</p>
       </div>
     )
   }
